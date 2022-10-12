@@ -1,0 +1,21 @@
+{
+  "name": "muster",
+  "version": "1.0.0",
+  "description": "",
+
+  "scripts": {
+  "start": "rm -rf dev-serve && parcel src/index.html --dist-dir dev-serve",
+  "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
+  "deploy": "gh-pages -d build"
+}, 
+  "author": "Joel Buchholz",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0"
+  }
+}
