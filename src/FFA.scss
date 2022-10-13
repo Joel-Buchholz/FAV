@@ -9,7 +9,7 @@
 
 body {
     height: 200vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(1.jpg);
     display: grid;
     grid-template-columns: 1fr 38.2%;
@@ -346,11 +346,11 @@ h1 {
 @media screen and (max-width:720px) {
     body{
     height: 400vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(1.jpg);
     grid-template-columns: 1fr;
     display: grid;
-    grid-template-rows: 15vh repeat(6, 1fr) 10vh;
+    grid-template-rows: 15vh repeat(12, 1fr) 10vh;
     grid-template-areas:
         "nav"
         "content"
@@ -359,16 +359,50 @@ h1 {
         "content"
         "content"
         "content"
+        "sidebar"
+        "sidebar"
+        "sidebar"
+        "sidebar"
+        "sidebar"
+        "sidebar"
         "footer";
     }
 
-    section {
-        grid-area:unset;
-        height: 200vh;
+    .out:hover {
+        transform: none;
     }
 
-    .out, .out2, .out3 .out4 {
-        width: 20vw;
+    .out:hover .in {
+        transform: translateX(-25vw);
+    }
+
+    .out2:hover .in {
+        transform: translateX(-25vw);
+    }
+
+    .out3:hover .in {
+        transform: translateX(-25vw);
+    }
+
+    .out4:hover .in {
+        transform: translateX(-25vw);
+    }
+
+    .out2:hover {
+        transform: none;
+    }
+
+    .out3:hover {
+        transform: none;
+    }
+
+    .out4:hover {
+        transform: none;
+    }
+
+    .out, .out2, .out3, .out4 {
+        width: 30vw;
+        transform: none;
     }
 
     .in, .in2, .in3, .in4{
