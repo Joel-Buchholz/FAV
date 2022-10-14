@@ -13,6 +13,26 @@
 .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10, .b11, .b12 {
   margin: 0.5rem;
   transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-f, .b-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cp1 {
+  height: 90%;
+  width: 90%;
+}
+
+.cpb1 {
+  color: white;
+  height: 70%;
+  width: 70%;
 }
 
 /*!
@@ -11255,6 +11275,12 @@ h1, .h1 {
 
 .b12:hover .b2-i {
   transform: rotateY(180deg);
+}
+
+.cp1 {
+  background-color: red;
+  -webkit-clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+          clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
 }
 
 @media screen and (max-width: 720px) {

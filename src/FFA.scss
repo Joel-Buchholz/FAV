@@ -249,9 +249,7 @@ h1 {
 }
 
 .b-f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %Fcenter;
     background-color: rgb(241, 241, 241);
     color: black;
     border: 0.2rem solid rgb(255, 255, 255);
@@ -260,9 +258,7 @@ h1 {
 }
 
 .b-b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %Fcenter;
     background-color: rgb(37, 37, 37);
     color: white;
     border: 0.2rem solid rgb(0, 0, 0);
@@ -350,19 +346,14 @@ h1 {
 }
 
 .cp1 {
-    height: 90%;
-    width: 90%;
+    @extend %cpstyle;
     background-color: red;
     clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
 }
 
 .cpb1 {
-    color: white;
-    height: 70%;
-    width: 70%;
+    @extend %cpbstyle
 }
-
-
 
 @media screen and (max-width:720px) {
     body{

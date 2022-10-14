@@ -12,4 +12,23 @@
 %bstyle {
     margin: 0.5rem;
     transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+%Fcenter {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%cpstyle {
+    height: 90%;
+    width: 90%;
+}
+
+%cpbstyle {
+    color: white;
+    height: 70%;
+    width: 70%;
 }

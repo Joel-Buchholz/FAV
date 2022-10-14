@@ -10,8 +10,28 @@
 }
 
 .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10, .b11, .b12 {
+  justify-content: center;
+  align-items: center;
   margin: .5rem;
   transition: all 1s;
+  display: flex;
+}
+
+.b-f, .b-b {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cp1 {
+  height: 90%;
+  width: 90%;
+}
+
+.cpb1 {
+  color: #fff;
+  height: 70%;
+  width: 70%;
 }
 
 :root {
@@ -12253,9 +12273,6 @@ h1, .h1 {
   background-color: #f1f1f1;
   border: .2rem solid #fff;
   border-radius: 1rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   box-shadow: 0 5px 15px 10px #d3d3d3;
 }
 
@@ -12264,9 +12281,6 @@ h1, .h1 {
   background-color: #252525;
   border: .2rem solid #000;
   border-radius: 1rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   transform: rotateX(180deg);
   box-shadow: 0 5px 15px 10px #d3d3d3;
 }
@@ -12325,16 +12339,8 @@ h1, .h1 {
 }
 
 .cp1 {
-  height: 90%;
-  width: 90%;
   clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
   background-color: red;
-}
-
-.cpb1 {
-  color: #fff;
-  height: 70%;
-  width: 70%;
 }
 
 @media screen and (max-width: 720px) {
