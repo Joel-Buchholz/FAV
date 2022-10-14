@@ -12253,6 +12253,9 @@ h1, .h1 {
   background-color: #f1f1f1;
   border: .2rem solid #fff;
   border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   box-shadow: 0 5px 15px 10px #d3d3d3;
 }
 
@@ -12261,6 +12264,9 @@ h1, .h1 {
   background-color: #252525;
   border: .2rem solid #000;
   border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   transform: rotateX(180deg);
   box-shadow: 0 5px 15px 10px #d3d3d3;
 }
@@ -12316,6 +12322,19 @@ h1, .h1 {
 
 .b8:hover .b2-i, .b9:hover .b2-i, .b10:hover .b2-i, .b11:hover .b2-i, .b12:hover .b2-i {
   transform: rotateY(180deg);
+}
+
+.cp1 {
+  height: 90%;
+  width: 90%;
+  clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+  background-color: red;
+}
+
+.cpb1 {
+  color: #fff;
+  height: 70%;
+  width: 70%;
 }
 
 @media screen and (max-width: 720px) {
