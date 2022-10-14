@@ -289,6 +289,7 @@ h1 {
 }
 
 .b2-f {
+    @extend %Fcenter;
     background-color: rgb(241, 241, 241);
     color: black;
     border: 0.2rem solid rgb(255, 255, 255);
@@ -297,12 +298,14 @@ h1 {
 }
 
 .b2-b {
+    @extend %Fcenter;
     background-color: rgb(37, 37, 37);
     color: white;
     border: 0.2rem solid rgb(0, 0, 0);
     border-radius: 1rem;
     box-shadow: 0px 5px 15px 10px lightgray;
     transform: rotateX(180deg);
+    rotate: 180deg;
 }
 
 .b3:hover .b-i {
@@ -352,6 +355,16 @@ h1 {
 }
 
 .cpb1 {
+    @extend %cpbstyle
+}
+
+.cp2 {
+    @extend %cpstyle;
+    background-color: green;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+.cpb2 {
     @extend %cpbstyle
 }
 

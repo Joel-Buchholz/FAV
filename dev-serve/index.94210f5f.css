@@ -17,18 +17,18 @@
   display: flex;
 }
 
-.b-f, .b-b {
+.b-f, .b-b, .b2-f, .b2-b {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.cp1 {
+.cp1, .cp2 {
   height: 90%;
   width: 90%;
 }
 
-.cpb1 {
+.cpb1, .cpb2 {
   color: #fff;
   height: 70%;
   width: 70%;
@@ -12318,7 +12318,7 @@ h1, .h1 {
   background-color: #252525;
   border: .2rem solid #000;
   border-radius: 1rem;
-  transform: rotateX(180deg);
+  transform: rotateX(180deg)rotate3d(0, 0, 1, 180deg);
   box-shadow: 0 5px 15px 10px #d3d3d3;
 }
 
@@ -12341,6 +12341,11 @@ h1, .h1 {
 .cp1 {
   clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
   background-color: red;
+}
+
+.cp2 {
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  background-color: green;
 }
 
 @media screen and (max-width: 720px) {
