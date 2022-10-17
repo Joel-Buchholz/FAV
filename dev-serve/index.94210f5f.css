@@ -4,7 +4,7 @@
   background-color: #f1f1f1;
   border: .2rem solid #fff;
   border-radius: 1rem;
-  margin-top: 7.5%;
+  margin-top: 7.65%;
   transition: all 1s;
   position: relative;
   box-shadow: 0 5px 15px 10px #d3d3d3;
@@ -31,8 +31,12 @@
 
 .cpb1, .cpb2, .cpb3, .cpb4, .cpb5, .cpb6, .cpb7, .cpb8, .cpb9, .cpb10, .cpb11, .cpb12 {
   color: #fff;
-  height: 70%;
+  height: 80%;
   width: 90%;
+}
+
+.cpb1:first-line, .cpb2:first-line, .cpb3:first-line, .cpb4:first-line, .cpb5:first-line, .cpb6:first-line, .cpb7:first-line, .cpb8:first-line, .cpb9:first-line, .cpb10:first-line, .cpb11:first-line, .cpb12:first-line {
+  color: #397f55;
 }
 
 :root {
@@ -12053,7 +12057,7 @@ body {
   width: 100%;
   background-image: url("1.ba51fde5.jpg");
   background-attachment: fixed;
-  grid-template-rows: 15vh repeat(6, 1fr) 10vh;
+  grid-template-rows: 10vh repeat(6, 1fr) 10vh;
   grid-template-columns: 1fr 38.2%;
   grid-template-areas: "nav nav"
                        "content sidebar"
@@ -12138,6 +12142,61 @@ h1 {
 
 .out {
   grid-area: s1;
+}
+
+.boxw {
+  perspective: 1000px;
+  margin: 50px 50px auto;
+  position: absolute;
+  inset: 0;
+}
+
+.würfel {
+  transform-style: preserve-3d;
+  animation: 10s linear infinite spin;
+  position: relative;
+}
+
+.w {
+  width: 100px;
+  height: 100px;
+  background-color: #252525;
+  border: .3rem solid #397f55;
+  position: absolute;
+}
+
+.a {
+  transform: translateZ(50px);
+}
+
+.b {
+  transform: rotateX(-90deg)translateZ(50px);
+}
+
+.c {
+  transform: rotateY(90deg)rotateX(90deg)translateZ(50px);
+}
+
+.d {
+  transform: rotateY(180deg)rotateZ(90deg)translateZ(50px);
+}
+
+.e {
+  transform: rotateY(-90deg)rotateZ(90deg)translateZ(50px);
+}
+
+.f {
+  transform: rotateY(90deg)translateZ(50px);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0)rotateX(0)rotateZ(0);
+  }
+
+  100% {
+    transform: rotateY(360deg)rotateX(0)rotateZ(0);
+  }
 }
 
 .out2 {
@@ -12417,7 +12476,7 @@ h1 {
     height: 400vh;
     width: 100%;
     background-image: url("1.ba51fde5.jpg");
-    grid-template-rows: 15vh repeat(12, 1fr) 10vh;
+    grid-template-rows: 10vh repeat(12, 1fr) 10vh;
     grid-template-columns: 1fr;
     grid-template-areas: "nav"
                          "content"

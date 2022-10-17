@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr 38.2%;
-    grid-template-rows: 15vh repeat(6, 1fr) 10vh;
+    grid-template-rows: 10vh repeat(6, 1fr) 10vh;
     grid-template-areas:
         "nav nav"
         "content sidebar"
@@ -102,6 +102,64 @@ h1 {
 .out {
     grid-area: s1;
     @extend %outs;
+}
+
+.boxw {
+    margin: 50 50 auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    perspective: 1000px;
+    position: absolute;
+}
+
+.würfel {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+}
+
+.w {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(37, 37, 37);
+    border: 0.3rem solid #397F55;
+}
+
+.a {
+    transform: translateZ(50px);
+}
+
+.b {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.c {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+}
+
+.d {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+}
+
+.e {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+}
+
+.f {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(0deg) rotateZ(0deg);
+    }
 }
 
 .out2 {
@@ -489,7 +547,7 @@ h1 {
     background-image: url(1.jpg);
     grid-template-columns: 1fr;
     display: grid;
-    grid-template-rows: 15vh repeat(12, 1fr) 10vh;
+    grid-template-rows: 10vh repeat(12, 1fr) 10vh;
     grid-template-areas:
         "nav"
         "content"
